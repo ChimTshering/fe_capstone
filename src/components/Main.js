@@ -8,7 +8,7 @@ import user3 from "../assets/user3.png";
 export const Main = () => {
   return (
     <>
-      <section className="hero-section">
+      <section className="hero-section" id="hero-section">
         <div>
           <h1>Little Lemon</h1>
           <h3>Chicago</h3>
@@ -16,15 +16,15 @@ export const Main = () => {
           <h6>Welcome one and all to enjoy your taste.</h6>
           <h6>We offer all kinds of food with its delicacy since 1990.</h6>
           <h6>"Indulge in flavors from around the world!"</h6>
-          <a href = '/booking'>
-          <button className="yellow-button">Reserve a Table</button>
+          <a href="/booking">
+            <button className="yellow-button">Reserve a Table</button>
           </a>
         </div>
         <div className="hero-pic">
           <img src={heroPic} alt="home page" width={240} />
         </div>
       </section>
-      <section className="highlights-section">
+      <section className="highlights-section" id="highlights-section">
         <div className="heading">
           <h1>This week specials!</h1>
           <button className="yellow-button">Online Menu</button>
@@ -39,7 +39,7 @@ export const Main = () => {
           })}
         </div>
       </section>
-      <section className="testimonial-sections">
+      <section className="testimonial-sections" id="testimonial-sections">
         <h1>Testimonials</h1>
         <div className="cards">
           {testimonials.map((data) => {
@@ -51,7 +51,7 @@ export const Main = () => {
           })}
         </div>
       </section>
-      <section className="about-sections">
+      <section className="about-section" id="about-section">
         <div>
           <h1>Little Lemon</h1>
           <h3>Chicago</h3>

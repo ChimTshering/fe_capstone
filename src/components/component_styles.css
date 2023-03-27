@@ -136,14 +136,14 @@ ul li a {
   margin-top: 5px;
   padding: 5px;
 }
-.about-sections{
+.about-section{
   display:flex;
   align-items:center;
   width:75vw;
   margin: 30px auto;
   position:relative;
 }
-.about-sections div{
+.about-section div{
   padding:10px;
 }
 .chiefs{
@@ -162,12 +162,12 @@ ul li a {
   z-index:1
 }
 
-.about-sections h1{
+.about-section h1{
   color:#495e57;
   font-size:3rem;
   margin-bottom:0px
 }
-.about-sections h3{
+.about-section h3{
   color:#333333;
   font-size:1rem;
   margin-top:0px
