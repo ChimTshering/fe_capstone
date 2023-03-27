@@ -11,10 +11,20 @@ const initializeTimes = ()=> {
   return(["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"])};
 
 function App() {
-  useEffect(()=>{
-   (async()=>{ const res = window.fetchAPI(Date.now());
-    console.log(res)})()
-  },[])
+  // cannot load the scripe file and header meta tags are updated in index.html
+
+  
+  // useEffect(()=>{
+  //   const script = document.createElement("script");
+  //   script.src =
+  //     "https://raw.githubusercontent.com/Meta-Front-End-Developer-PC/capstone/master/api.js";
+  //   script.async = true;
+  //   document.body.appendChild(script);
+  //   script.onload = function() {
+  //     console.log(window.fetchAPI(Date.now()));
+  //   }
+  //   // console.log(res)
+  // },[])
   const [availableTime, setAvailableTime] = useReducer(
     updateTimes,
     ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"],
